@@ -6,6 +6,11 @@ StackAllocator::StackAllocator(size_t size)
 	static_assert(sizeof(size_t) >= sizeof(void*), "the size of uint must be greater than or equal to the size of a pointer");
 	maxSize = size;
 	start = malloc(size);
+	if(start==NULL)
+	{
+		printf("Error al asignar memoria");
+	}
+
 	marker = (size_t)start;
 	prev = marker;
 	//printf("dir: %p\n", start);

@@ -8,7 +8,7 @@ int main(int argc, char** argv)
 	clock_t t = clock();
 
 	//asignar 32 MB de memoria dinamica
-	StackAllocator *stackAllocator = new StackAllocator(1024 * 1024 * 32);
+	StackAllocator *stackAllocator = new StackAllocator(1024 * 1024 * 512);
 	clock_t dt = clock() - t;
 	printf("Tomo %f segundos inicializar StackAllocator.\n", ((float)dt) / CLOCKS_PER_SEC);
 
