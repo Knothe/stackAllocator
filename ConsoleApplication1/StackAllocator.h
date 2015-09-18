@@ -1,3 +1,7 @@
+/* 
+	Copyright de algo
+*/
+
 #include <cstdlib>
 #include <iostream>
 class StackAllocator
